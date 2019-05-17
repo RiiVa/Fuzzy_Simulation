@@ -3,20 +3,17 @@ require './plot.rb'
 
 class Simulate
 
-  def simulate
+  def simulate tam , lumin
 
-    tam = 15
-    lumin = 401
+
     @luminosidad = Luminosidad.new(lumin)
     @tamano = Tamano.new(tam)
     @potencia = Array.new
     fuzzyLuminosidad
     fuzzyTamano
-    print(@luminosidad.valor)
-    print("/")
-    print(@tamano.valor)
-    print(@luminosidad.dict)
-    print(@tamano.dict)
+    p @luminosidad.dict
+    p @tamano.dict
+
 
     p = []
     m = []
@@ -39,6 +36,8 @@ class Simulate
     g << regla7
 
     mandami_agregation p, m, g
+
+    larsen_agregation p, m, g
 
 
 
@@ -267,7 +266,7 @@ class Simulate
 
 
   def mandami_agregation(p, m, g)
-
+    p("Usando mandami")
     # p p
     # p m
     # p g
@@ -278,21 +277,39 @@ class Simulate
     # p @medio
     plot = plot_potencia @peque , @medio , @grande
 
-    desfuzzy_centroide( plot.first, plot.last)
+    print("Centroide => ")
+    p desfuzzy_centroide( plot.first, plot.last)
+    print("Biseccion => ")
+    p desfuzzy_biseccion plot.first, plot.last
+    print("Middle Max => ")
+    p middle_max plot.first, plot.last
+    print("Largest Max => ")
+    p largest_max plot.first, plot.last
+    print("Samllest Max => ")
+    p smallest_max plot.first, plot.last
 
     # print(plot)
 
   end
 
   def larsen_agregation (p , m, g)
-
+    p("Usando Larsen")
     @peque = mandami p
     @medio = mandami m
     @grande = mandami g
 
     plot = plot_larsen @peque , @medio , @grande
 
-    desfuzzy_centroide( plot.first, plot.last)
+    print("Centroide => ")
+    p desfuzzy_centroide( plot.first, plot.last)
+    print("Biseccion => ")
+    p desfuzzy_biseccion plot.first, plot.last
+    print("Middle Max => ")
+    p middle_max plot.first, plot.last
+    print("Largest Max => ")
+    p largest_max plot.first, plot.last
+    print("Samllest Max => ")
+    p smallest_max plot.first, plot.last
 
   end
 
@@ -379,4 +396,4 @@ class Simulate
 end
 
 a = Simulate.new
-a.simulate()
+a.simulate 40 , 10

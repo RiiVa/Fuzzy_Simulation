@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cab76820-b9f2-4324-8e3b-9e6cbf813412" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Informe Ricardo Ivan Valdes Rodriguez C411.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Informe Ricardo Ivan Valdes Rodriguez C411.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/potencia.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/potencia_escalada.html" beforeDir="false" afterPath="$PROJECT_DIR$/potencia_escalada.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/potencia_larsen.html" beforeDir="false" afterPath="$PROJECT_DIR$/potencia_larsen.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/potencia_truncada.html" beforeDir="false" afterPath="$PROJECT_DIR$/potencia_truncada.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simulate.rb" beforeDir="false" afterPath="$PROJECT_DIR$/simulate.rb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,8 +23,8 @@
       <file leaf-file-name="simulate.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/simulate.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2369">
-              <caret line="377" selection-start-line="377" selection-end-line="377" />
+            <state relative-caret-position="392">
+              <caret line="398" column="18" selection-start-line="398" selection-start-column="18" selection-end-line="398" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -31,7 +32,7 @@
       <file leaf-file-name="plot.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/plot.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1890">
+            <state relative-caret-position="3078">
               <caret line="171" column="26" selection-start-line="171" selection-start-column="26" selection-end-line="171" selection-end-column="26" />
             </state>
           </provider>
@@ -84,7 +85,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="968" />
     <option name="y" value="40" />
     <option name="width" value="952" />
@@ -168,14 +169,15 @@
       <workItem from="1558059744684" duration="50773000" />
       <workItem from="1558060310236" duration="67000" />
       <workItem from="1558060438989" duration="377000" />
+      <workItem from="1558117954445" duration="916000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51217000" />
+    <option name="totallyTimeSpent" value="52133000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="968" y="40" width="952" height="984" extended-state="0" />
+    <frame x="-8" y="40" width="1936" height="992" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -186,7 +188,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49947917" weight="0.3297362" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49895832" visible="true" weight="0.3297362" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49895832" visible="true" weight="0.3261391" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -205,6 +207,20 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/simulate.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6786">
+          <caret line="377" selection-start-line="377" selection-end-line="377" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plot.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3078">
+          <caret line="171" column="26" selection-start-line="171" selection-start-column="26" selection-end-line="171" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/simulate.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6786">
@@ -242,15 +258,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/plot.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1890">
+        <state relative-caret-position="3078">
           <caret line="171" column="26" selection-start-line="171" selection-start-column="26" selection-end-line="171" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/simulate.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2369">
-          <caret line="377" selection-start-line="377" selection-end-line="377" />
+        <state relative-caret-position="392">
+          <caret line="398" column="18" selection-start-line="398" selection-start-column="18" selection-end-line="398" selection-end-column="18" />
         </state>
       </provider>
     </entry>

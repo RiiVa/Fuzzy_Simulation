@@ -1,0 +1,61 @@
+<html lang='en'>
+<head>
+  <title>Nyaplot</title>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.14/require.min.js"></script>
+  <script>if(window['d3'] === undefined ||
+   window['Nyaplot'] === undefined){
+    var path = {"d3":"https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min","downloadable":"http://cdn.rawgit.com/domitry/d3-downloadable/master/d3-downloadable"};
+
+
+
+    var shim = {"d3":{"exports":"d3"},"downloadable":{"exports":"downloadable"}};
+
+    require.config({paths: path, shim:shim});
+
+
+require(['d3'], function(d3){window['d3']=d3;console.log('finished loading d3');require(['downloadable'], function(downloadable){window['downloadable']=downloadable;console.log('finished loading downloadable');
+
+	var script = d3.select("head")
+	    .append("script")
+	    .attr("src", "http://cdn.rawgit.com/domitry/Nyaplotjs/master/release/nyaplot.js")
+	    .attr("async", true);
+
+	script[0][0].onload = script[0][0].onreadystatechange = function(){
+
+
+	    var event = document.createEvent("HTMLEvents");
+	    event.initEvent("load_nyaplot",false,false);
+	    window.dispatchEvent(event);
+	    console.log('Finished loading Nyaplotjs');
+
+	};
+
+
+});});
+}
+</script>
+</head>
+<body><div id='vis-44769eb7-530f-4352-8006-d36c798a9a8b'></div>
+<script>
+(function(){
+    var render = function(){
+        var model = {"panes":[{"diagrams":[{"type":"scatter","options":{"x":"data0","y":"data1"},"data":"50d6216f-8310-4f51-80a8-2dd69254fe70"},{"type":"scatter","options":{"x":"data0","y":"data1","color":["rgb(179,226,205)","rgb(253,205,172)","rgb(203,213,232)","rgb(244,202,228)","rgb(230,245,201)","rgb(255,242,174)","rgb(241,226,204)","rgb(204,204,204)"]},"data":"1e61b5fe-4cae-44c2-b305-814359ca3ad5"},{"type":"scatter","options":{"x":"data0","y":"data1"},"data":"c87eeb5a-c49f-488d-9b45-6163499dff8c"}],"options":{"zoom":true,"width":700,"xrange":[0,100],"yrange":[0,0]}}],"data":{"50d6216f-8310-4f51-80a8-2dd69254fe70":[{"data0":0,"data1":0},{"data0":1,"data1":0},{"data0":2,"data1":0},{"data0":3,"data1":0},{"data0":4,"data1":0},{"data0":5,"data1":0},{"data0":6,"data1":0},{"data0":7,"data1":0},{"data0":8,"data1":0},{"data0":9,"data1":0},{"data0":10,"data1":0},{"data0":11,"data1":0},{"data0":12,"data1":0},{"data0":13,"data1":0},{"data0":14,"data1":0},{"data0":15,"data1":0},{"data0":16,"data1":0},{"data0":17,"data1":0},{"data0":18,"data1":0},{"data0":19,"data1":0},{"data0":20,"data1":0},{"data0":21,"data1":0},{"data0":22,"data1":0},{"data0":23,"data1":0},{"data0":24,"data1":0},{"data0":25,"data1":0},{"data0":26,"data1":0},{"data0":27,"data1":0},{"data0":28,"data1":0},{"data0":29,"data1":0},{"data0":30,"data1":0.0},{"data0":31,"data1":0},{"data0":32,"data1":0},{"data0":33,"data1":0},{"data0":34,"data1":0},{"data0":35,"data1":0},{"data0":36,"data1":0},{"data0":37,"data1":0},{"data0":38,"data1":0},{"data0":39,"data1":0},{"data0":40,"data1":0},{"data0":41,"data1":0},{"data0":42,"data1":0},{"data0":43,"data1":0},{"data0":44,"data1":0},{"data0":45,"data1":0},{"data0":46,"data1":0},{"data0":47,"data1":0},{"data0":48,"data1":0},{"data0":49,"data1":0},{"data0":50,"data1":0},{"data0":51,"data1":0},{"data0":52,"data1":0},{"data0":53,"data1":0},{"data0":54,"data1":0},{"data0":55,"data1":0},{"data0":56,"data1":0},{"data0":57,"data1":0},{"data0":58,"data1":0},{"data0":59,"data1":0},{"data0":60,"data1":0},{"data0":61,"data1":0},{"data0":62,"data1":0},{"data0":63,"data1":0},{"data0":64,"data1":0},{"data0":65,"data1":0},{"data0":66,"data1":0},{"data0":67,"data1":0},{"data0":68,"data1":0},{"data0":69,"data1":0},{"data0":70,"data1":0},{"data0":71,"data1":0},{"data0":72,"data1":0},{"data0":73,"data1":0},{"data0":74,"data1":0},{"data0":75,"data1":0},{"data0":76,"data1":0},{"data0":77,"data1":0},{"data0":78,"data1":0},{"data0":79,"data1":0},{"data0":80,"data1":0},{"data0":81,"data1":0},{"data0":82,"data1":0},{"data0":83,"data1":0},{"data0":84,"data1":0},{"data0":85,"data1":0},{"data0":86,"data1":0},{"data0":87,"data1":0},{"data0":88,"data1":0},{"data0":89,"data1":0},{"data0":90,"data1":0},{"data0":91,"data1":0},{"data0":92,"data1":0},{"data0":93,"data1":0},{"data0":94,"data1":0},{"data0":95,"data1":0},{"data0":96,"data1":0},{"data0":97,"data1":0},{"data0":98,"data1":0},{"data0":99,"data1":0},{"data0":100,"data1":0}],"1e61b5fe-4cae-44c2-b305-814359ca3ad5":[{"data0":0,"data1":0},{"data0":1,"data1":0},{"data0":2,"data1":0},{"data0":3,"data1":0},{"data0":4,"data1":0},{"data0":5,"data1":0},{"data0":6,"data1":0},{"data0":7,"data1":0},{"data0":8,"data1":0},{"data0":9,"data1":0},{"data0":10,"data1":0},{"data0":11,"data1":0},{"data0":12,"data1":0},{"data0":13,"data1":0},{"data0":14,"data1":0},{"data0":15,"data1":0},{"data0":16,"data1":0},{"data0":17,"data1":0},{"data0":18,"data1":0},{"data0":19,"data1":0},{"data0":20,"data1":0},{"data0":21,"data1":0},{"data0":22,"data1":0},{"data0":23,"data1":0},{"data0":24,"data1":0},{"data0":25,"data1":0.0},{"data0":26,"data1":0},{"data0":27,"data1":0},{"data0":28,"data1":0},{"data0":29,"data1":0},{"data0":30,"data1":0},{"data0":31,"data1":0},{"data0":32,"data1":0},{"data0":33,"data1":0},{"data0":34,"data1":0},{"data0":35,"data1":0},{"data0":36,"data1":0},{"data0":37,"data1":0},{"data0":38,"data1":0},{"data0":39,"data1":0},{"data0":40,"data1":0},{"data0":41,"data1":0},{"data0":42,"data1":0},{"data0":43,"data1":0},{"data0":44,"data1":0},{"data0":45,"data1":0},{"data0":46,"data1":0},{"data0":47,"data1":0},{"data0":48,"data1":0},{"data0":49,"data1":0},{"data0":50,"data1":0},{"data0":51,"data1":0},{"data0":52,"data1":0},{"data0":53,"data1":0},{"data0":54,"data1":0},{"data0":55,"data1":0},{"data0":56,"data1":0},{"data0":57,"data1":0},{"data0":58,"data1":0},{"data0":59,"data1":0},{"data0":60,"data1":0},{"data0":61,"data1":0},{"data0":62,"data1":0},{"data0":63,"data1":0},{"data0":64,"data1":0},{"data0":65,"data1":0},{"data0":66,"data1":0},{"data0":67,"data1":0},{"data0":68,"data1":0},{"data0":69,"data1":0},{"data0":70,"data1":0},{"data0":71,"data1":0},{"data0":72,"data1":0},{"data0":73,"data1":0},{"data0":74,"data1":0},{"data0":75,"data1":0.0},{"data0":76,"data1":0},{"data0":77,"data1":0},{"data0":78,"data1":0},{"data0":79,"data1":0},{"data0":80,"data1":0},{"data0":81,"data1":0},{"data0":82,"data1":0},{"data0":83,"data1":0},{"data0":84,"data1":0},{"data0":85,"data1":0},{"data0":86,"data1":0},{"data0":87,"data1":0},{"data0":88,"data1":0},{"data0":89,"data1":0},{"data0":90,"data1":0},{"data0":91,"data1":0},{"data0":92,"data1":0},{"data0":93,"data1":0},{"data0":94,"data1":0},{"data0":95,"data1":0},{"data0":96,"data1":0},{"data0":97,"data1":0},{"data0":98,"data1":0},{"data0":99,"data1":0},{"data0":100,"data1":0}],"c87eeb5a-c49f-488d-9b45-6163499dff8c":[{"data0":0,"data1":0},{"data0":1,"data1":0},{"data0":2,"data1":0},{"data0":3,"data1":0},{"data0":4,"data1":0},{"data0":5,"data1":0},{"data0":6,"data1":0},{"data0":7,"data1":0},{"data0":8,"data1":0},{"data0":9,"data1":0},{"data0":10,"data1":0},{"data0":11,"data1":0},{"data0":12,"data1":0},{"data0":13,"data1":0},{"data0":14,"data1":0},{"data0":15,"data1":0},{"data0":16,"data1":0},{"data0":17,"data1":0},{"data0":18,"data1":0},{"data0":19,"data1":0},{"data0":20,"data1":0},{"data0":21,"data1":0},{"data0":22,"data1":0},{"data0":23,"data1":0},{"data0":24,"data1":0},{"data0":25,"data1":0},{"data0":26,"data1":0},{"data0":27,"data1":0},{"data0":28,"data1":0},{"data0":29,"data1":0},{"data0":30,"data1":0},{"data0":31,"data1":0},{"data0":32,"data1":0},{"data0":33,"data1":0},{"data0":34,"data1":0},{"data0":35,"data1":0},{"data0":36,"data1":0},{"data0":37,"data1":0},{"data0":38,"data1":0},{"data0":39,"data1":0},{"data0":40,"data1":0},{"data0":41,"data1":0},{"data0":42,"data1":0},{"data0":43,"data1":0},{"data0":44,"data1":0},{"data0":45,"data1":0},{"data0":46,"data1":0},{"data0":47,"data1":0},{"data0":48,"data1":0},{"data0":49,"data1":0},{"data0":50,"data1":0},{"data0":51,"data1":0},{"data0":52,"data1":0},{"data0":53,"data1":0},{"data0":54,"data1":0},{"data0":55,"data1":0},{"data0":56,"data1":0},{"data0":57,"data1":0},{"data0":58,"data1":0},{"data0":59,"data1":0},{"data0":60,"data1":0.0},{"data0":61,"data1":0},{"data0":62,"data1":0},{"data0":63,"data1":0},{"data0":64,"data1":0},{"data0":65,"data1":0},{"data0":66,"data1":0},{"data0":67,"data1":0},{"data0":68,"data1":0},{"data0":69,"data1":0},{"data0":70,"data1":0},{"data0":71,"data1":0},{"data0":72,"data1":0},{"data0":73,"data1":0},{"data0":74,"data1":0},{"data0":75,"data1":0},{"data0":76,"data1":0},{"data0":77,"data1":0},{"data0":78,"data1":0},{"data0":79,"data1":0},{"data0":80,"data1":0},{"data0":81,"data1":0},{"data0":82,"data1":0},{"data0":83,"data1":0},{"data0":84,"data1":0},{"data0":85,"data1":0},{"data0":86,"data1":0},{"data0":87,"data1":0},{"data0":88,"data1":0},{"data0":89,"data1":0},{"data0":90,"data1":0},{"data0":91,"data1":0},{"data0":92,"data1":0},{"data0":93,"data1":0},{"data0":94,"data1":0},{"data0":95,"data1":0},{"data0":96,"data1":0},{"data0":97,"data1":0},{"data0":98,"data1":0},{"data0":99,"data1":0},{"data0":100,"data1":0}]},"extension":[]}
+        var id_name = '#vis-44769eb7-530f-4352-8006-d36c798a9a8b';
+        Nyaplot.core.parse(model, id_name);
+
+        require(['downloadable'], function(downloadable){
+          var svg = d3.select(id_name).select("svg");
+	  if(!svg.empty())
+	    svg.call(downloadable().filename('fig'));
+	});
+    };
+    if(window['Nyaplot']==undefined){
+        window.addEventListener('load_nyaplot', render, false);
+	return;
+    } else {
+       render();
+    }
+})();
+</script>
+</body>
+</html>
