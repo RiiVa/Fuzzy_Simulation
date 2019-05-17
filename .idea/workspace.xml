@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cab76820-b9f2-4324-8e3b-9e6cbf813412" name="Default" comment="" />
+    <list default="true" id="cab76820-b9f2-4324-8e3b-9e6cbf813412" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plot.rb" beforeDir="false" afterPath="$PROJECT_DIR$/plot.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/potencia.html" beforeDir="false" afterPath="$PROJECT_DIR$/potencia.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/potencia_truncada.html" beforeDir="false" afterPath="$PROJECT_DIR$/potencia_truncada.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simulate.rb" beforeDir="false" afterPath="$PROJECT_DIR$/simulate.rb" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,8 +23,8 @@
       <file leaf-file-name="simulate.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/simulate.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="142" column="6" selection-start-line="142" selection-start-column="6" selection-end-line="142" selection-end-column="6" />
+            <state relative-caret-position="6732">
+              <caret line="377" lean-forward="true" selection-start-line="377" selection-end-line="377" />
             </state>
           </provider>
         </entry>
@@ -26,8 +32,8 @@
       <file leaf-file-name="plot.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/plot.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1620">
-              <caret line="171" column="25" lean-forward="true" selection-start-line="171" selection-start-column="25" selection-end-line="171" selection-end-column="25" />
+            <state relative-caret-position="288">
+              <caret line="195" column="8" selection-start-line="195" selection-start-column="8" selection-end-line="199" />
             </state>
           </provider>
         </entry>
@@ -49,8 +55,11 @@
       <find>@p</find>
       <find>medio</find>
       <find>media</find>
-      <find>print</find>
       <find>p</find>
+      <find>mandam</find>
+      <find>pr</find>
+      <find>print</find>
+      <find>fuzzy_centroide</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -77,10 +86,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="8" />
     <option name="y" value="40" />
-    <option name="width" value="1904" />
-    <option name="height" value="484" />
+    <option name="width" value="952" />
+    <option name="height" value="984" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -157,12 +165,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1558059743493</updated>
-      <workItem from="1558059744684" duration="43853000" />
+      <workItem from="1558059744684" duration="50773000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43853000" />
+    <option name="totallyTimeSpent" value="50773000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="40" width="1920" height="984" extended-state="6" />
@@ -196,17 +204,24 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$APPLICATION_HOME_DIR$/rubystubs25/numeric.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="197" column="14" lean-forward="true" selection-start-line="197" selection-start-column="14" selection-end-line="197" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/plot.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1620">
-          <caret line="171" column="25" lean-forward="true" selection-start-line="171" selection-start-column="25" selection-end-line="171" selection-end-column="25" />
+        <state relative-caret-position="288">
+          <caret line="195" column="8" selection-start-line="195" selection-start-column="8" selection-end-line="199" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/simulate.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="142" column="6" selection-start-line="142" selection-start-column="6" selection-end-line="142" selection-end-column="6" />
+        <state relative-caret-position="6732">
+          <caret line="377" lean-forward="true" selection-start-line="377" selection-end-line="377" />
         </state>
       </provider>
     </entry>

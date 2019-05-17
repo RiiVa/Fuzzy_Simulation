@@ -5,7 +5,7 @@ class Simulate
 
   def simulate
 
-    tam = 30
+    tam = 15
     lumin = 401
     @luminosidad = Luminosidad.new(lumin)
     @tamano = Tamano.new(tam)
@@ -38,7 +38,7 @@ class Simulate
     g << regla4
     g << regla7
 
-     print(mandami_segregation p, m, g)
+    mandami_agregation p, m, g
 
 
 
@@ -266,10 +266,11 @@ class Simulate
   end
 
 
-  def mandami_segregation(p, m, g)
-    p p
-    p m
-    p g
+  def mandami_agregation(p, m, g)
+
+    # p p
+    # p m
+    # p g
     @peque = mandami p
     @medio = mandami m
     @grande = mandami g
@@ -277,10 +278,23 @@ class Simulate
     # p @medio
     plot = plot_potencia @peque , @medio , @grande
 
-    fuzzy_centroide(0 , 100)
+    desfuzzy_centroide( plot.first, plot.last)
+
     # print(plot)
+
   end
 
+  def larsen_agregation (p , m, g)
+
+    @peque = mandami p
+    @medio = mandami m
+    @grande = mandami g
+
+    plot = plot_larsen @peque , @medio , @grande
+
+    desfuzzy_centroide( plot.first, plot.last)
+
+  end
 
   def mandami( x)
 
@@ -291,32 +305,18 @@ class Simulate
     c1
   end
 
-  def fuzzy_centroide a, b
+
+
+  def desfuzzy_centroide  (x, y)
 
     numerador = 0.0
     denominador = 0.0
     # (a..b).step(10).each do |i|
-    (a..b).step((b-a)/1000.0).each do |i|
-      # print(i)
-      fuzzyPotencia i
-      # p @potencia
-      if @potencia.include?("baja")
-        numerador += @peque * i
-        denominador += @peque
-      end
-
-      if @potencia.include?("media")
-        # p i
-        # print(numerador)
-        # print(denominador)
-        numerador += @medio * i
-        denominador += @medio
-      end
-      if @potencia.include?("alta")
-        numerador += @grande * i
-        denominador += @grande
-      end
-      @potencia = Array.new
+    # p (y)
+    # (a..b).step((b-a)/1000).each do |i|
+    x.each_with_index do |i,index|
+      numerador += i * y[index]
+      denominador += y[index]
 
     end
     if denominador <= 0
@@ -325,8 +325,55 @@ class Simulate
       numerador/denominador
     end
 
+  end
 
+  def middle (i, l)
+    left = l[0...i].sum
+    right = l.sum - left
 
+    if left == right or i+1 >= l.length or i-1 < 0
+      i
+    elsif left > right
+      if l[0...i-1].sum < l[i...l.length].sum then
+        return i
+
+      end
+      middle i-1 , l
+    else
+      if l[0...i+1].sum > l[i+2...l.length].sum then
+        return i
+      end
+      middle i+1 , l
+    end
+  end
+
+  def desfuzzy_biseccion( x , y)
+    i = middle y.length/2 , y
+    [x[i], y[i]]
+
+  end
+
+  def middle_max (x , y)
+    max_l = y.max
+    values = []
+
+    for i in 0..y.length
+      if y[i] == max_l
+        values.append x[i]
+      end
+    end
+    values.sum/values.length
+  end
+
+  def smallest_max (x,y)
+
+    x[y.index(y.max)]
+  end
+
+  def largest_max(x , y)
+    y.reverse!
+    x.reverse!
+    smallest_max x , y
   end
 
 end
