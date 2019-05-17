@@ -1,0 +1,61 @@
+<html lang='en'>
+<head>
+  <title>Nyaplot</title>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.14/require.min.js"></script>
+  <script>if(window['d3'] === undefined ||
+   window['Nyaplot'] === undefined){
+    var path = {"d3":"https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min","downloadable":"http://cdn.rawgit.com/domitry/d3-downloadable/master/d3-downloadable"};
+
+
+
+    var shim = {"d3":{"exports":"d3"},"downloadable":{"exports":"downloadable"}};
+
+    require.config({paths: path, shim:shim});
+
+
+require(['d3'], function(d3){window['d3']=d3;console.log('finished loading d3');require(['downloadable'], function(downloadable){window['downloadable']=downloadable;console.log('finished loading downloadable');
+
+	var script = d3.select("head")
+	    .append("script")
+	    .attr("src", "http://cdn.rawgit.com/domitry/Nyaplotjs/master/release/nyaplot.js")
+	    .attr("async", true);
+
+	script[0][0].onload = script[0][0].onreadystatechange = function(){
+
+
+	    var event = document.createEvent("HTMLEvents");
+	    event.initEvent("load_nyaplot",false,false);
+	    window.dispatchEvent(event);
+	    console.log('Finished loading Nyaplotjs');
+
+	};
+
+
+});});
+}
+</script>
+</head>
+<body><div id='vis-fd57c23f-5f06-4520-87e7-c6ea3a188b8a'></div>
+<script>
+(function(){
+    var render = function(){
+        var model = {"panes":[{"diagrams":[{"type":"scatter","options":{"x":"data0","y":"data1"},"data":"5242f6ab-9688-4ef2-8cde-8e5b4aaa56b2"},{"type":"scatter","options":{"x":"data0","y":"data1","color":["rgb(127,201,127)","rgb(190,174,212)","rgb(253,192,134)","rgb(255,255,153)","rgb(56,108,176)","rgb(240,2,127)","rgb(191,91,23)","rgb(102,102,102)"]},"data":"a17d2918-cd46-41ef-aa50-2cda7f887e77"},{"type":"scatter","options":{"x":"data0","y":"data1"},"data":"36355ff0-75be-44f3-8370-584d1968c611"}],"options":{"zoom":true,"width":700,"xrange":[0,100],"yrange":[0.0,1.0]}}],"data":{"5242f6ab-9688-4ef2-8cde-8e5b4aaa56b2":[{"data0":0,"data1":1.0},{"data0":1,"data1":0.9666666666666667},{"data0":2,"data1":0.9333333333333333},{"data0":3,"data1":0.9},{"data0":4,"data1":0.8666666666666667},{"data0":5,"data1":0.8333333333333334},{"data0":6,"data1":0.8},{"data0":7,"data1":0.7666666666666666},{"data0":8,"data1":0.7333333333333334},{"data0":9,"data1":0.7},{"data0":10,"data1":0.6666666666666667},{"data0":11,"data1":0.6333333333333333},{"data0":12,"data1":0.6},{"data0":13,"data1":0.5666666666666667},{"data0":14,"data1":0.5333333333333333},{"data0":15,"data1":0.5},{"data0":16,"data1":0.4666666666666667},{"data0":17,"data1":0.43333333333333335},{"data0":18,"data1":0.4},{"data0":19,"data1":0.3666666666666667},{"data0":20,"data1":0.33333333333333337},{"data0":21,"data1":0.30000000000000004},{"data0":22,"data1":0.2666666666666667},{"data0":23,"data1":0.23333333333333328},{"data0":24,"data1":0.19999999999999996},{"data0":25,"data1":0.16666666666666663},{"data0":26,"data1":0.1333333333333333},{"data0":27,"data1":0.09999999999999998},{"data0":28,"data1":0.06666666666666665},{"data0":29,"data1":0.033333333333333326},{"data0":30,"data1":0.0},{"data0":31,"data1":0},{"data0":32,"data1":0},{"data0":33,"data1":0},{"data0":34,"data1":0},{"data0":35,"data1":0},{"data0":36,"data1":0},{"data0":37,"data1":0},{"data0":38,"data1":0},{"data0":39,"data1":0},{"data0":40,"data1":0},{"data0":41,"data1":0},{"data0":42,"data1":0},{"data0":43,"data1":0},{"data0":44,"data1":0},{"data0":45,"data1":0},{"data0":46,"data1":0},{"data0":47,"data1":0},{"data0":48,"data1":0},{"data0":49,"data1":0},{"data0":50,"data1":0},{"data0":51,"data1":0},{"data0":52,"data1":0},{"data0":53,"data1":0},{"data0":54,"data1":0},{"data0":55,"data1":0},{"data0":56,"data1":0},{"data0":57,"data1":0},{"data0":58,"data1":0},{"data0":59,"data1":0},{"data0":60,"data1":0},{"data0":61,"data1":0},{"data0":62,"data1":0},{"data0":63,"data1":0},{"data0":64,"data1":0},{"data0":65,"data1":0},{"data0":66,"data1":0},{"data0":67,"data1":0},{"data0":68,"data1":0},{"data0":69,"data1":0},{"data0":70,"data1":0},{"data0":71,"data1":0},{"data0":72,"data1":0},{"data0":73,"data1":0},{"data0":74,"data1":0},{"data0":75,"data1":0},{"data0":76,"data1":0},{"data0":77,"data1":0},{"data0":78,"data1":0},{"data0":79,"data1":0},{"data0":80,"data1":0},{"data0":81,"data1":0},{"data0":82,"data1":0},{"data0":83,"data1":0},{"data0":84,"data1":0},{"data0":85,"data1":0},{"data0":86,"data1":0},{"data0":87,"data1":0},{"data0":88,"data1":0},{"data0":89,"data1":0},{"data0":90,"data1":0},{"data0":91,"data1":0},{"data0":92,"data1":0},{"data0":93,"data1":0},{"data0":94,"data1":0},{"data0":95,"data1":0},{"data0":96,"data1":0},{"data0":97,"data1":0},{"data0":98,"data1":0},{"data0":99,"data1":0},{"data0":100,"data1":0}],"a17d2918-cd46-41ef-aa50-2cda7f887e77":[{"data0":0,"data1":0},{"data0":1,"data1":0},{"data0":2,"data1":0},{"data0":3,"data1":0},{"data0":4,"data1":0},{"data0":5,"data1":0},{"data0":6,"data1":0},{"data0":7,"data1":0},{"data0":8,"data1":0},{"data0":9,"data1":0},{"data0":10,"data1":0},{"data0":11,"data1":0},{"data0":12,"data1":0},{"data0":13,"data1":0},{"data0":14,"data1":0},{"data0":15,"data1":0},{"data0":16,"data1":0},{"data0":17,"data1":0},{"data0":18,"data1":0},{"data0":19,"data1":0},{"data0":20,"data1":0},{"data0":21,"data1":0},{"data0":22,"data1":0},{"data0":23,"data1":0},{"data0":24,"data1":0},{"data0":25,"data1":0.0},{"data0":26,"data1":0.06666666666666667},{"data0":27,"data1":0.13333333333333333},{"data0":28,"data1":0.2},{"data0":29,"data1":0.26666666666666666},{"data0":30,"data1":0.3333333333333333},{"data0":31,"data1":0.4},{"data0":32,"data1":0.4666666666666667},{"data0":33,"data1":0.5333333333333333},{"data0":34,"data1":0.6},{"data0":35,"data1":0.6666666666666666},{"data0":36,"data1":0.7333333333333333},{"data0":37,"data1":0.8},{"data0":38,"data1":0.8666666666666667},{"data0":39,"data1":0.9333333333333333},{"data0":40,"data1":1.0},{"data0":41,"data1":1},{"data0":42,"data1":1},{"data0":43,"data1":1},{"data0":44,"data1":1},{"data0":45,"data1":1},{"data0":46,"data1":1},{"data0":47,"data1":1},{"data0":48,"data1":1},{"data0":49,"data1":1},{"data0":50,"data1":1},{"data0":51,"data1":1},{"data0":52,"data1":1},{"data0":53,"data1":1},{"data0":54,"data1":1},{"data0":55,"data1":1},{"data0":56,"data1":1},{"data0":57,"data1":1},{"data0":58,"data1":1},{"data0":59,"data1":1},{"data0":60,"data1":1},{"data0":61,"data1":0.9333333333333333},{"data0":62,"data1":0.8666666666666667},{"data0":63,"data1":0.8},{"data0":64,"data1":0.7333333333333333},{"data0":65,"data1":0.6666666666666666},{"data0":66,"data1":0.6},{"data0":67,"data1":0.5333333333333333},{"data0":68,"data1":0.4666666666666667},{"data0":69,"data1":0.4},{"data0":70,"data1":0.3333333333333333},{"data0":71,"data1":0.26666666666666666},{"data0":72,"data1":0.2},{"data0":73,"data1":0.13333333333333333},{"data0":74,"data1":0.06666666666666667},{"data0":75,"data1":0.0},{"data0":76,"data1":0},{"data0":77,"data1":0},{"data0":78,"data1":0},{"data0":79,"data1":0},{"data0":80,"data1":0},{"data0":81,"data1":0},{"data0":82,"data1":0},{"data0":83,"data1":0},{"data0":84,"data1":0},{"data0":85,"data1":0},{"data0":86,"data1":0},{"data0":87,"data1":0},{"data0":88,"data1":0},{"data0":89,"data1":0},{"data0":90,"data1":0},{"data0":91,"data1":0},{"data0":92,"data1":0},{"data0":93,"data1":0},{"data0":94,"data1":0},{"data0":95,"data1":0},{"data0":96,"data1":0},{"data0":97,"data1":0},{"data0":98,"data1":0},{"data0":99,"data1":0},{"data0":100,"data1":0}],"36355ff0-75be-44f3-8370-584d1968c611":[{"data0":0,"data1":0},{"data0":1,"data1":0},{"data0":2,"data1":0},{"data0":3,"data1":0},{"data0":4,"data1":0},{"data0":5,"data1":0},{"data0":6,"data1":0},{"data0":7,"data1":0},{"data0":8,"data1":0},{"data0":9,"data1":0},{"data0":10,"data1":0},{"data0":11,"data1":0},{"data0":12,"data1":0},{"data0":13,"data1":0},{"data0":14,"data1":0},{"data0":15,"data1":0},{"data0":16,"data1":0},{"data0":17,"data1":0},{"data0":18,"data1":0},{"data0":19,"data1":0},{"data0":20,"data1":0},{"data0":21,"data1":0},{"data0":22,"data1":0},{"data0":23,"data1":0},{"data0":24,"data1":0},{"data0":25,"data1":0},{"data0":26,"data1":0},{"data0":27,"data1":0},{"data0":28,"data1":0},{"data0":29,"data1":0},{"data0":30,"data1":0},{"data0":31,"data1":0},{"data0":32,"data1":0},{"data0":33,"data1":0},{"data0":34,"data1":0},{"data0":35,"data1":0},{"data0":36,"data1":0},{"data0":37,"data1":0},{"data0":38,"data1":0},{"data0":39,"data1":0},{"data0":40,"data1":0},{"data0":41,"data1":0},{"data0":42,"data1":0},{"data0":43,"data1":0},{"data0":44,"data1":0},{"data0":45,"data1":0},{"data0":46,"data1":0},{"data0":47,"data1":0},{"data0":48,"data1":0},{"data0":49,"data1":0},{"data0":50,"data1":0},{"data0":51,"data1":0},{"data0":52,"data1":0},{"data0":53,"data1":0},{"data0":54,"data1":0},{"data0":55,"data1":0},{"data0":56,"data1":0},{"data0":57,"data1":0},{"data0":58,"data1":0},{"data0":59,"data1":0},{"data0":60,"data1":0.0},{"data0":61,"data1":0.025},{"data0":62,"data1":0.05},{"data0":63,"data1":0.075},{"data0":64,"data1":0.1},{"data0":65,"data1":0.125},{"data0":66,"data1":0.15},{"data0":67,"data1":0.175},{"data0":68,"data1":0.2},{"data0":69,"data1":0.225},{"data0":70,"data1":0.25},{"data0":71,"data1":0.275},{"data0":72,"data1":0.3},{"data0":73,"data1":0.325},{"data0":74,"data1":0.35},{"data0":75,"data1":0.375},{"data0":76,"data1":0.4},{"data0":77,"data1":0.425},{"data0":78,"data1":0.45},{"data0":79,"data1":0.475},{"data0":80,"data1":0.5},{"data0":81,"data1":0.525},{"data0":82,"data1":0.55},{"data0":83,"data1":0.575},{"data0":84,"data1":0.6},{"data0":85,"data1":0.625},{"data0":86,"data1":0.65},{"data0":87,"data1":0.675},{"data0":88,"data1":0.7},{"data0":89,"data1":0.725},{"data0":90,"data1":0.75},{"data0":91,"data1":0.775},{"data0":92,"data1":0.8},{"data0":93,"data1":0.825},{"data0":94,"data1":0.85},{"data0":95,"data1":0.875},{"data0":96,"data1":0.9},{"data0":97,"data1":0.925},{"data0":98,"data1":0.95},{"data0":99,"data1":0.975},{"data0":100,"data1":1.0}]},"extension":[]}
+        var id_name = '#vis-fd57c23f-5f06-4520-87e7-c6ea3a188b8a';
+        Nyaplot.core.parse(model, id_name);
+
+        require(['downloadable'], function(downloadable){
+          var svg = d3.select(id_name).select("svg");
+	  if(!svg.empty())
+	    svg.call(downloadable().filename('fig'));
+	});
+    };
+    if(window['Nyaplot']==undefined){
+        window.addEventListener('load_nyaplot', render, false);
+	return;
+    } else {
+       render();
+    }
+})();
+</script>
+</body>
+</html>
